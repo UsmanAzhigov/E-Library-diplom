@@ -8,6 +8,8 @@ class BookShelf extends Component {
       if (getbook.shelf === ready) {
         return <Book key={getbook.id} book={getbook} onChange={this.props.onChange} />;
       }
+
+      return null;
     });
   }
   render() {
