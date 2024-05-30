@@ -16,24 +16,24 @@ class BookShelf extends Component {
     return (
       <div className="list-books">
         <div className="list-books-title">
-          <h1>MyReads</h1>
+          <h1>Мои Книги</h1>
         </div>
         <div className="list-books-content">
           <div>
             <div className="bookshelf">
-              <h2 className="bookshelf-title">Currently Reading</h2>
+              <h2 className="bookshelf-title">Читаю сейчас</h2>
               <div className="bookshelf-books">
                 <ol className="books-grid">{this.UserMessage('currentlyReading')}</ol>
               </div>
             </div>
             <div className="bookshelf">
-              <h2 className="bookshelf-title">Want to Read</h2>
+              <h2 className="bookshelf-title">Хочу прочитать</h2>
               <div className="bookshelf-books">
                 <ol className="books-grid">{this.UserMessage('wantToRead')}</ol>
               </div>
             </div>
             <div className="bookshelf">
-              <h2 className="bookshelf-title">Read</h2>
+              <h2 className="bookshelf-title">Прочитано</h2>
               <div className="bookshelf-books">
                 <ol className="books-grid">{this.UserMessage('read')}</ol>
               </div>
@@ -41,7 +41,7 @@ class BookShelf extends Component {
           </div>
         </div>
         <div className="open-search">
-          <Link to="/Search">Add a book</Link>
+          <Link to="/Search">Добавить книгу</Link>
         </div>
       </div>
     );
