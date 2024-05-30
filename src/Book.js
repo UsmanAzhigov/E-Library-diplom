@@ -16,11 +16,11 @@ const Book = (props) => {
             }}></div>
           <div className="book-shelf-changer">
             <select value={shelf} onChange={(e) => props.onChange(props.book, e.target.value)}>
-              <option value="none">Move to...</option>
-              <option value="currentlyReading">Currently Reading</option>
-              <option value="wantToRead">Want to Read</option>
-              <option value="read">Read</option>
-              <option value="none">None</option>
+              <option value="none">Переместить в...</option>
+              <option value="currentlyReading">Читаю сейчас</option>
+              <option value="wantToRead">Хочу прочитать</option>
+              <option value="read">Прочитано</option>
+              <option value="none">Нет</option>
             </select>
           </div>
         </div>

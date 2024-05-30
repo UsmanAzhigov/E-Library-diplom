@@ -17,14 +17,14 @@ class SearchBooks extends Component {
       <div className="search-books">
         <div className="search-books-bar">
           <Link onClick={this.props.onClick} className="close-search" to="/">
-            Close
+            Закрыть
           </Link>
           <div className="search-books-input-wrapper">
             <input
               type="text"
               value={this.state.query}
               onChange={(event) => this.updateQuery(event.target.value)}
-              placeholder="Search by title or author"
+              placeholder="Искать по названию или автору"
             />
           </div>
         </div>
